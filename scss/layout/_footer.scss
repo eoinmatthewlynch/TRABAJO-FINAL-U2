@@ -1,0 +1,16 @@
+footer{
+    
+    border-top: 1px solid black;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul li a{
+text-decoration: none;
+color: white;
+}
+footer h2{
+    color: white;
+}
