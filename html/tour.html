@@ -34,43 +34,173 @@
 
 
     </header>
-  
-    <main>
-        <div> 
-         
-        <img src="../assets/tour.jpg" alt="u2 tour" height="250px"  >
-        <h2>
-            US WORLD TOUR 2024
-        </h2>
-        <div id="TICKETS"></div>
-        <div class="row">
-            <div class="col-sm-9">
-                Las Vegas, NV USA
-              <button type="button" class="btn btn-dark">BUY TICKETS</button>
-              <div class="row">
-                <div class="col-8 col-sm-6">
-                    Dublin, Ireland 
-                    <button type="button" class="btn btn-dark">BUY TICKETS</button>
-                </div>
-                <div class="col-4 col-sm-6">
-                    London, UK
-                    <button type="button" class="btn btn-dark">BUY TICKETS</button>
-                </div>
-                <div class="col-sm-9">
-                    LOS ANGELES, USA
-                  <button type="button" class="btn btn-dark">BUY TICKETS</button>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Cool Website</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f7f7f7;
+                color: #030303;
+            }
+    
+            header {
+                background-color: #050505;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            main {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+    
+            h1, h2, h3 {
+                color: #333;
+            }
+    
+            p {
+                line-height: 1.6;
+            }
+    
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #fff;
+                background-color: #080808;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+    
+            .button:hover {
+                background-color: #070707;
+            }
+    
+            footer {
+                background-color: #020202;
+                color: #fff;
+                text-align: center;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <header>
         
+    </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Columns with Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 5px;
+        }
+
+        #buttonContainer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #0a0a0a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8d1126;
+        }
+    </style>
+</head>
+<body>
+
+
+</div>
+
+
+
+<script>
+    function buttonClick() {
+        alert('Button clicked!');
+    }
+</script>
+<main>
+    <div class="main-container">
+        <h2>U2 WORLD TOUR 2024</h2>
+        <div id="TICKETS"></div>
+        <div class="event-container">
+            <div class="event">
+                <h3>LAS VEGAS, NV USA</h3>
+                <p>SATURDAY 
+                    MARCH 2
+                    2024</P>
+                <button type="button" class="btn btn-dark">BUY TICKETS</button>
+            </div>
+            <div class="event">
+                <h3>DUBLIN IRELAND</h3>
+                <p>SATURDAY 
+                    JULY 2
+                    2024</P>
+                <button type="button" class="btn btn-dark">BUY TICKETS</button>
+            </div>
+            <div class="event">
+                <h3>LONDON, UK</h3>
+                <p>SATURDAY 
+                    JUNE 8
+                    2024</P>
+                <button type="button" class="btn btn-dark">BUY TICKETS</button>
+            </div>
+            <div class="event">
+                <h3>LOS ANGELES, USA</h3>
+                <p>SATURDAY
+                    SEPTEMBER  1
+                    2024</P>
+                <button type="button" class="btn btn-dark">BUY TICKETS</button>
+            </div>
+        </div>
+        <div id="buttonContainer">
+            <button onclick="buttonClick()">VIP TICKETS HERE</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>
     
 
-    </main>
-    
-</body>
 </html>
 <footer>
     <h2>

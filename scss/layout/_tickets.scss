@@ -1,0 +1,70 @@
+.tickets{
+       color: gray;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 2.5rem;
+       text-align: center;
+       margin-top: 25px;
+   }
+
+    p
+
+   footer{
+
+       background-color: black;
+   }
+
+
+.tickets{main {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.tour-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.event h3 {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-dark {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-light {
+    background-color: #ddd;
+    color: #333;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}}
