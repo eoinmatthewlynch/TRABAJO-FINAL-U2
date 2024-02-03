@@ -1,27 +1,49 @@
-
+/* Header Styles */
 header {
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    img{
-        width: 5rem;
-    }
+    padding: 10px; /* Agregado: Espaciado interno para mejorar en pantallas pequeñas */
+}
+
+header img {
+    width: 5rem;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    ;   
 }
 
-a{
+header a {
     margin: 15px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', Helvetica, sans-serif;
     text-decoration: none;
-    transition: 1s;
-    &:hover {
-        color: green;
+    transition: color 1s; /* Corregido: Agregado 'color' para la transición */
+}
+
+header a:hover {
+    color: green;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Corregido: Agregado 'border-box' */
+}
+
+/* Media Query para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column; /* Cambiado: Cambiar a dirección de columna en pantallas pequeñas */
+        text-align: center; /* Agregado: Centrar texto en pantallas pequeñas */
+    }
+
+    header a {
+        margin: 5px; /* Modificado: Menor espaciado en pantallas pequeñas */
     }
 }
