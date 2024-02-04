@@ -1,22 +1,14 @@
-.tickets{
-       color: gray;
-       font-family: Arial, Helvetica, sans-serif;
-       font-size: 2.5rem;
-       text-align: center;
-       margin-top: 25px;
-   }
+.tickets {
+    color: gray;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 25px;
+}
 
-    p
-
-   footer{
-
-       background-color: black;
-   }
-
-
-.tickets{main {
+main {
     background-color: #f8f8f8;
-    padding: 40px 0;
+    padding: 40px 10px; /* Ajustado el padding */
     text-align: center;
 }
 
@@ -67,4 +59,34 @@
 
 .btn:hover {
     background-color: #45a049;
-}}
+}
+
+footer {
+    background-color: black;
+    color: white; /* Agregado: Texto blanco en el pie de página */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Media Queries para hacer responsive */
+
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 20px 5px; /* Ajustado el padding */
+    }
+
+    .tour-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .tickets {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .tickets {
+        font-size: 1.5rem; /* Ajustado el tamaño del texto */
+    }
+}

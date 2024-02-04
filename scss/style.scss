@@ -1,13 +1,126 @@
-@import 'layout/header';
+// Importaciones de layouts
+@import 'layout/navcontainer';
+@import 'layout/mixins/mixins';
 @import 'base/reset';
-@import 'layout/band';
-@import 'layout/footer';
-@import 'layout/form';
-@import 'layout/contenedor';
-@import 'layout/bandpresentation';
-@import'layout/tickets.scss';
+@import 'layout/partials/_band';
+@import 'layout/partials/header';
+@import 'layout/partials/bandpresentation';
+@import 'layout/partials/buttons';
+@import 'layout/partials/contenedor';
+@import 'layout/partials/footer';
+@import 'layout/partials/form';
+@import 'layout/partials/grids';
+@import 'layout/partials/tickets';
+@import 'layout/partials/variables';
+@import 'layout/partials/gallery';
+@import 'layout/partials/.swiper-container';
+@import 'layout/partials/body';
 
+// Importaciones de estilos externos
+@import 'base/reset';
+@import 'layout/partials/variables';
 
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+// Resto de tus estilos SCSS
+header {
+    font-family: 'Rock Salt', cursive;
+}
 
+body {
+    font-family: 'Rock Salt', cursive;
+}
 
+/* Muestra el título en dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .nav-title {
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery img {
+        border-radius: 6px;
+    }
+
+    .videos-container iframe {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer ul {
+        flex-wrap: wrap;
+    }
+
+    footer ul li {
+        margin: 8px;
+    }
+
+    footer ul a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+// style.scss
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #030303; /* Fondo más oscuro */
+    color: #fff;
+}
+
+header {
+    background-color: #030303; /* Color más oscuro para el encabezado */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #050505; /* Color de fondo más oscuro para la barra de navegación */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Rock Salt', cursive; /* Fuente más informal para un toque rockero */
+}

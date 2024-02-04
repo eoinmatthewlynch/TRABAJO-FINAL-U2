@@ -1,0 +1,16 @@
+#contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+
+  > div {
+    width: 100%; // Ocupa el 100% del ancho en dispositivos móviles
+    box-sizing: border-box;
+    padding: 5%;
+    border-radius: 10%;
+
+    @media only screen and (min-width: 768px) {
+      width: 50%; // Divide en dos columnas en dispositivos más grandes
+    }
+  }
+}

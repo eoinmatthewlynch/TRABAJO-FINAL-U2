@@ -1,0 +1,72 @@
+#contenedor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 10px; /* Se cambió el porcentaje a un valor específico en píxeles */
+  padding: 2% 2% 5% 2%;
+  background-color: #2c2c2c; /* Fondo oscuro para un estilo más rockero */
+}
+
+#contenedor > div {
+  width: 50%;
+  display: grid;
+  border-radius: 10px;
+  padding: 2% 2% 5%;
+  background-color: #1c1c1c; /* Fondo oscuro para un estilo más rockero */
+  color: white; /* Texto en blanco para un contraste adecuado */
+}
+
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: black; /* Fondo negro para un estilo más rockero */
+  color: white; /* Texto en blanco para un contraste adecuado */
+}
+
+.grid-container {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100%);
+  gap: 25px;
+}
+
+h1, p, a {
+  font-family: 'Rock Salt', cursive; /* Se agregó la fuente Rock Salt */
+}
+
+.carouselExample {
+  width: 100px;
+  align-items: center;
+}
+
+// Media Queries
+@media only screen and (max-width: 1200px) {
+  #contenedor > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contenedor {
+    padding: 2% 2% 2%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #contenedor {
+    padding: 2% 2%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

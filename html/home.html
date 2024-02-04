@@ -1,69 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-    
- </head>
- <body>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #030303; /* Fondo más oscuro */
+            color: #fff;
+        }
+
+        header {
+            background-color: #030303; /* Color más oscuro para el encabezado */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #050505; /* Color de fondo más oscuro para la barra de navegación */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav a {
+            padding: 14px 16px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: background-color 0.3s ease, color 0.3s ease;
+            font-family: 'Rock Salt', cursive; /* Fuente más informal para un toque rockero */
+        }
+
+
+
+        main {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #030303; /* Color de fondo más oscuro para el contenido principal */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            font-family: 'Rock Salt', cursive; 
+        }
+
+        .nav-link img {
+            width: 100%;
+            height: auto;
+            border-radius: 100px;
+            padding-left: 20%;
+        }
+
+        .nav-link:hover {
+        
+            color: #fff;
+            transform: scale(1.05);
+            padding-left: 20%;
+        }
+
+        .nav-link:hover .nav-title {
+            opacity: 1;
+        }
+
+        .dropdown-menu {
+            background-color: #070707; /* Color de fondo más oscuro para el menú desplegable */
+            border: none;
+        }
+
+        .dropdown-container {
+            margin-bottom: 100px;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        footer {
+            background-color: #020202; /* Color más oscuro para el pie de página */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
     <header>
         <img src="../assets/logo.png" alt="logo u2">
         <nav>
-            <ul>
-                <li><a href="../html/home.html">Home</a></li>
-                <li><a href="../html/tour.html">Tour</a></li>
-                <li><a href="../html/music.html">Music</a></li>
-                <li><a href="../html/gallery.html">Gallery</a></li>
-                <li><a href="../html/contact.html">Contact</a></li>
-
-
-
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="../html/home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/tour.html">Tour</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/music.html">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/contact.html">Contact</a></li>
             </ul>
-
-
-
         </nav>
-
     </header>
-    
-    <main>
-        <div  id="contenedor">
-        <div>
-        <section class="the-band">
-            <h1>
-                The Band 
-            </h1>
-            <p> 
-                U2 are an Irish rock band from Dublin, formed in 1976. The group consists of Bono (lead vocals and rhythm guitar), the Edge (lead guitar, keyboards, and backing vocals), Adam Clayton (bass guitar), and Larry Mullen Jr. (drums and percussion). Initially rooted in post-punk, U2's musical style has evolved throughout their career, yet has maintained an anthemic quality built on Bono's expressive vocals and the Edge's chiming, effects-based guitar sounds. Bono's lyrics, often embellished with spiritual imagery, focus on personal and sociopolitical themes. Popular for their live performances, the group have staged several elaborate tours over their career.
-            </p>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <section class="the-band text-center">
+                    <h1>The Band</h1>
+                    <p>
+                        U2 are an Irish rock band from Dublin, formed in 1976. The group consists of Bono (lead vocals
+                        and rhythm guitar), the Edge (lead guitar, keyboards, and backing vocals), Adam Clayton (bass
+                        guitar), and Larry Mullen Jr. (drums and percussion). Initially rooted in post-punk, U2's
+                        musical style has evolved throughout their career, yet has maintained an anthemic quality built
+                        on Bono's expressive vocals and the Edge's chiming, effects-based guitar sounds. Bono's lyrics,
+                        often embellished with spiritual imagery, focus on personal and sociopolitical themes. Popular
+                        for their live performances, the group has staged several elaborate tours over their career.
+                    </p>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <img src="../assets/U2 Home.jpg" alt="u2 photo" class="img-fluid mx-auto d-block">
+            </div>
         </div>
-           <div> <img src="../assets/U2 Home.jpg" alt="u2 photo">
-
-
-
-           </div> </div>
-        </section>
-    
-
+        <nav class="text-center">
+            <div class="nav-container dropdown-container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="../html/tour.html" class="nav-link">
+                            <img src="../assets/tour.jpg" alt="Tour">
+                            <span class="nav-title">Tour</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/music.html" class="nav-link">
+                            <img src="../assets/Joshua Tree.jpg" alt="Music">
+                            <span class="nav-title">Music</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/gallery.html" class="nav-link">
+                            <img src="../assets/gallery 6.jpg" alt="Gallery">
+                            <span class="nav-title">Gallery</span />
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/contact.html" class="nav-link">
+                            <img src="../assets/band photo 3.jpg" alt="Contact">
+                            <span class="nav-title">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </main>
-    
-    
+
+    <footer class="text-center py-4">
+        <h2>COPYRIGHT U2 BAND 2023</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item">
+                <a href="https://open.spotify.com/intl-es/artist/51Blml2LZPmy7TTiAg47vQ" target="_blank">
+                    <img src="../assets/icons8-spotify-48.png" alt="">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.youtube.com/@U2official" target="_blank">
+                    <img src="../assets/icons8-youtube-48 (1).png" alt="">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/u2/" target="_blank">
+                    <img src="../assets/icons8-facebook-48 (1).png" alt="">
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/u2/?hl=en" target="_blank">
+                    <img src="../assets/icons8-instagram-48 (1).png" alt="">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-<footer>
-    <h2>
-        COPYRIGHT U2 BAND 2023
-    </h2>
-    <ul>
-    <!--enlace ansoluto-me lleva a otro web-->
-    <a href="https://open.spotify.com/intl-es/artist/51Blml2LZPmy7TTiAg47vQ" target="_blank"><img src="../assets/icons8-spotify-48.png" alt=""></a>
-    <a href="https://www.youtube.com/@U2official" target="_blank"><img src="../assets/icons8-youtube-48 (1).png" alt=""></a>
-    <a href="https://www.facebook.com/u2/" target="_blank"><img src="../assets/icons8-facebook-48 (1).png" alt=""></a>
-    <a href="https://www.instagram.com/u2/?hl=en" target="_blank"><img src="../assets/icons8-instagram-48 (1).png" alt=""></a>
-    </ul>
-</footer>

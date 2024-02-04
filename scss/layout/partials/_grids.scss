@@ -1,0 +1,49 @@
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(25% - var(--gap)), 1fr));
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px; /* Añade bordes redondeados o sombras si lo deseas */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    img:hover {
+        transform: scale(1.05); /* Efecto de escala al pasar el ratón sobre la imagen */
+    }
+}
+
+/* Estilos adicionales para columnas y filas especiales */
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+/* Media Queries para hacer responsive */
+@media only screen and (max-width: 768px) {
+    .image-grid {
+        --num-cols: 2;
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - var(--gap)), 1fr));
+    }
+    
+    .image-grid-col-2 {
+        grid-column: span 1;
+    }
+
+    .image-grid-row-2 {
+        grid-row: span 1;
+    }
+}

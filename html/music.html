@@ -1,16 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-   
+    <style>
+        body {
+            font-family: 'Rock Salt', cursive;
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #0e0e0e;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .swiper-container {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #050505;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer ul li {
+            margin-right: 10px;
+        }
+
+        footer ul li:last-child {
+            margin-right: 0;
+        }
+
+        footer ul a img {
+            border-radius: 50%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <img src="../assets/logo.png" alt="logo u2">
+        <a href="home.html">
+            <img src="../assets/logo.png" alt="logo u2">
+        </a>
         <nav>
             <ul>
                 <li><a href="../html/home.html">Home</a></li>
@@ -18,79 +112,75 @@
                 <li><a href="../html/music.html">Music</a></li>
                 <li><a href="../html/gallery.html">Gallery</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
-
-
-
             </ul>
-
-
-
         </nav>
-
-
-
-
-
     </header>
-    <h1>THE MOST POPULAR RECORDS </h1>
-    
-    <div class="cards" style="width: 80rem;">
-    <img src="../assets/u2 boy.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">THE BOY</h5>
-          <p class="card-text">Boy was the first of three albums to be produced by Steve Lillywhite and was released in October 1980. The original sleeve featured the 'boy' Peter Rowan but Warner Bros, fearing controversy, released a different album cover in North America, featuring a stretched and distorted picture of the band. Other releases of note around the world included the original 12" vinyl of Boy in Japan - withdrawn after a few months and re-issued on the Polystar label. In several countries, Boy was also re-issued on 5" CD in April 1995 as part of the Island Master series. This Island Masters re-issue featured higher quality paper and extra pictures from the original LP's inner sleeve. On the heels of the UK and Ireland release of Boy, in Sweden they released a limited blue vinyl pressing, with identical sleeves and catalog number to the UK edition.
-            Boy was voted Best Album, Best Debut Album, and Best Album Sleeve in the Hot Press Irish National Poll Results. It peaked at No. 52 on the UK album charts and No. 63 on the US album charts. In the US, it was certified platinum by the RIAA.
-          </p>
-        </div>
-      </div>
 
-      <div class="cards" style="width: 80rem;">
-        <img src="../assets/Joshua Tree.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h6 class="card-title">JOSHUA TREE</h6>
-          <p class="card-text">The release of The Joshua Tree saw the band on the cover of Time Magazine billed as 'Rock's Hottest Ticket.' In Sweden, copies of The Joshua Tree were pressed in yellow, pink and red vinyl with sleeves similar to the UK. In Mexico, a limited edition CD was released as part of the Serie Millennium re-issues with a different picture sleeve. In 1999, The Joshua Tree CD was re-issued with the clear band photo that appeared on the original vinyl LP rather than the blurred picture on the initial CD release.
-            The Joshua Tree entered the US album charts at No.7 and reached No. 1 three weeks later. It was U2's first album to reach No.1 in the United States.In 1999, The Joshua Tree was awarded the RIAA's highest certification, Diamond, with 10 million units sold. The album also peaked at No.1 on the UK, Canadian, West German, Dutch and Australian charts. In Switzerland, the album reached No.1 on the charts and stayed there for a total of 33 weeks. The album and sleeve cover also placed No. 1 in Rolling Stone magazine's annual Music Awards chosen by readers. Critics at Rolling Stone made it No. 2 album of the year. U2 also won Best Rock Performance By A Group Or Duo at the Grammy Awards for The Joshua Tree. Production Credits Produced and Engineered: Daniel Lanois and Brian Eno Additional Engineering: Dave Meegan with Pat McCarthy Studio: Windmill Lane, Dublin Ireland Mixed by: Steve Lillywhite Recorded by: Flood</p>
-        </div>
-      </div>
+    <div class="container mt-4">
+        <h2 class="text-center">THE TOP ONES</h2>
 
-      <div class="cards" style="width: 80rem;">
-        <img src="../assets/U2 Best of.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h7 class="card-title">The BEST OF U2 VOLUME 1 1980-1990</h7>
-          <p class="card-text">U2's first compilation comprised two discs: the first entitled 'The Best of U2 Volume One 1980-1990' consisted of 14 tracks from the Boy to the Rattle and Hum era. The second, entitled 'The B-Sides', was a collection of 15 b-sides from the same era. The two discs were combined into a limited edition double release for the first week of sales. After the first week, the b-sides disc was deleted from the band's catalog. The Canadian release had a numbered, limited edition of 175,000 units pressed.
-
-            The single disc Best Of peaked at No.5 on the Canadian album charts and No.4 on the US album charts. The combined Best Of/B-sides reached No.1 and No.2 in Canada and the US, respectively. In the US, U2 had the largest opening week for a greatest hits collection for any group in the Soundscan era. Likewise, in Ireland, the Best Of holds the record for the highest sales in a single week since 1993 when IRMA started keeping records. The album reached No. 1 on Ireland's album charts and stayed in the charts for a total of 76 weeks. </p>
-        </div>
-      </div>
-      
-</body>
-<div class="mu-swiper-multimedia-outer-wrapper">
-    <div class="swiper-container mu-swiper-multimedia">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <iframe width="560" height="315" src="https://u2.lnk.to/AtomicCity" frameborder="0" allowfullscreen></iframe>
-                <div class="swiper-slide-footer">
-                    <p>Listen all the music of U2 </p>
-                </div>
+        <!-- Card 1 -->
+        <div class="card mb-3">
+            <img src="../assets/u2 boy.jpg" class="card-img-top" alt="The Boy">
+            <div class="card-body">
+                <h5 class="card-title">THE BOY</h5>
+                <p class="card-text">
+                    <!-- cambios en las portadas -->
+                </p>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination invisible"></div>
-        <!-- See all videos -->
-        <a href="#" class="mu-swiper-see-all">Ver todos los vídeos</a>
+
+        <!-- Card 2 -->
+        <div class="card mb-3">
+            <img src="../assets/Joshua Tree.jpg" class="card-img-top" alt="Joshua Tree">
+            <div class="card-body">
+                <h5 class="card-title">JOSHUA TREE</h5>
+                <p class="card-text">
+                    <!-- portada 2 -->
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-3">
+            <img src="../assets/U2 Best of.jpg" class="card-img-top" alt="The Best of U2 Volume 1 1980-1990">
+            <div class="card-body">
+                <h5 class="card-title">The BEST OF U2 VOLUME 1 1980-1990</h5>
+                <p class="card-text">
+                    <!-- Your content here -->
+                </p>
+            </div>
+        </div>
     </div>
-</div>
-    
+
+    <div class="mu-swiper-multimedia-outer-wrapper">
+        <div class="container mt-4">
+            <div class="swiper-container mu-swiper-multimedia">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe width="100%" height="315" src="https://u2.lnk.to/AtomicCity" frameborder="0" allowfullscreen></iframe>
+                        <div class="swiper-slide-footer">
+                            <h3 class="text-center">Listen to all the music of U2</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination invisible"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4">
+        <h2>COPYRIGHT U2 BAND 2023</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://open.spotify.com/intl-es/artist/51Blml2LZPmy7TTiAg47vQ" target="_blank"><img src="../assets/icons8-spotify-48.png" alt="Spotify"></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/@U2official" target="_blank"><img src="../assets/icons8-youtube-48 (1).png" alt="YouTube"></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/u2/" target="_blank"><img src="../assets/icons8-facebook-48 (1).png" alt="Facebook"></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/u2/?hl=en" target="_blank"><img src="../assets/icons8-instagram-48 (1).png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
 </html>
-<footer>
-    <h2>
-        COPYRIGHT U2 BAND 2023
-    </h2>
-    <ul>
-    <!--enlace ansoluto-me lleva a otro web-->
-    <a href="https://open.spotify.com/intl-es/artist/51Blml2LZPmy7TTiAg47vQ" target="_blank"><img src="../assets/icons8-spotify-48.png" alt=""></a>
-    <a href="https://www.youtube.com/@U2official" target="_blank"><img src="../assets/icons8-youtube-48 (1).png" alt=""></a>
-    <a href="https://www.facebook.com/u2/" target="_blank"><img src="../assets/icons8-facebook-48 (1).png" alt=""></a>
-    <a href="https://www.instagram.com/u2/?hl=en" target="_blank"><img src="../assets/icons8-instagram-48 (1).png" alt=""></a>
-    </ul>
-</footer>

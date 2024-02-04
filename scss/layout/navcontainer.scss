@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #030303;
+}
+
+header {
+    background-color: #050505;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0a0a0a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+
+nav a:hover {
+    
+    color: #fff;
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-family: 'Rock Salt', cursive;
+}
+
+.nav-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 100px;
+    padding-left: 20%;
+}
+
+.nav-link:hover {
+    background-color:none;
+    color: #fff;
+    transform: scale(1.05);
+    padding-left: 20%;
+}
+
+  
