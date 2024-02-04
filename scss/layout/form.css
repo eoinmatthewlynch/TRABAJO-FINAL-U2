@@ -1,0 +1,45 @@
+footer {
+  border-top: 1px solid white;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 10px;
+}
+
+footer ul li:last-child {
+  margin-right: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Rock Salt", cursive;
+}
+footer ul li a:hover {
+  color: #070707;
+}
+
+footer h2 {
+  color: white;
+  font-family: "Rock Salt", cursive;
+  text-decoration: none;
+  margin: 15px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  footer h2 {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=form.css.map */
