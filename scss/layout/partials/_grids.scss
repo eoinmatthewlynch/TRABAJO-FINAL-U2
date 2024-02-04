@@ -23,10 +23,27 @@
     }
 }
 
+/* Estilos adicionales para columnas y filas especiales */
 .image-grid-col-2 {
     grid-column: span 2;
 }
 
 .image-grid-row-2 {
     grid-row: span 2;
+}
+
+/* Media Queries para hacer responsive */
+@media only screen and (max-width: 768px) {
+    .image-grid {
+        --num-cols: 2;
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - var(--gap)), 1fr));
+    }
+    
+    .image-grid-col-2 {
+        grid-column: span 1;
+    }
+
+    .image-grid-row-2 {
+        grid-row: span 1;
+    }
 }

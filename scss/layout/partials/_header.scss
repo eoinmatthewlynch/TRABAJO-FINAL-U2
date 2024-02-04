@@ -1,5 +1,6 @@
 /* Header Styles */
 header {
+    font-family: 'Rock Salt', cursive;
     background-color: black;
     display: flex;
     align-items: center;
@@ -14,18 +15,20 @@ header img {
 header nav ul {
     display: flex;
     list-style: none;
+    margin: 0; /* Agregado: Eliminar el margen en pantallas pequeñas */
+    font-family: 'Rock Salt', cursive;
 }
 
 header a {
     margin: 15px;
     color: white;
-    font-family: 'Arial', Helvetica, sans-serif;
+    font-family: 'Rock Salt', cursive;
     text-decoration: none;
-    transition: color 1s; /* Corregido: Agregado 'color' para la transición */
+    transition: color 0.3s; /* Corregido: Ajustado tiempo de transición */
 }
 
 header a:hover {
-    color: green;
+    color: rgb(201, 36, 63); /* Cambiado: Color verde más claro */
 }
 
 /* Body Styles */
@@ -45,5 +48,15 @@ body {
 
     header a {
         margin: 5px; /* Modificado: Menor espaciado en pantallas pequeñas */
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 14px;
     }
 }

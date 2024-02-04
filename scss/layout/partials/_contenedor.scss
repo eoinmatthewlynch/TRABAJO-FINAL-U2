@@ -2,15 +2,18 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-radius: 10%;
+  border-radius: 10px; /* Se cambió el porcentaje a un valor específico en píxeles */
   padding: 2% 2% 5% 2%;
+  background-color: #2c2c2c; /* Fondo oscuro para un estilo más rockero */
 }
 
 #contenedor > div {
   width: 50%;
   display: grid;
-  border-radius: 10%;
+  border-radius: 10px;
   padding: 2% 2% 5%;
+  background-color: #1c1c1c; /* Fondo oscuro para un estilo más rockero */
+  color: white; /* Texto en blanco para un contraste adecuado */
 }
 
 section div {
@@ -20,7 +23,8 @@ section div {
 }
 
 body {
-  background-color: white;
+  background-color: black; /* Fondo negro para un estilo más rockero */
+  color: white; /* Texto en blanco para un contraste adecuado */
 }
 
 .grid-container {
@@ -32,8 +36,7 @@ body {
 }
 
 h1, p, a {
-  font-family: 'Poppins', sans-serif;
-  font-display: GRID;  
+  font-family: 'Rock Salt', cursive; /* Se agregó la fuente Rock Salt */
 }
 
 .carouselExample {
